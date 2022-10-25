@@ -1,0 +1,100 @@
+body {
+    height: 100vh;
+}
+#aside {
+    background-color: #25133d;
+    height: 100vh;
+    color: #25133d;
+}
+#aside p:hover {
+    color: #fff;
+    font-size: 150px;
+    position: absolute;
+    background-color: black;
+    text-align: center;
+}
+#dados {
+    background-color: #fff;
+    margin-top: 2.8125rem;
+    height: 100vh;
+    font-family: "tt-travels-medium", "Arial", sans-serif;
+    padding-right: 6rem;
+}
+h1 {
+    font-size: 3.4375rem;
+}
+#title2 {
+    padding-right: 4.5625rem;
+    margin-bottom: 3.125rem;
+}
+mark {
+    background-color: #aeb5bf;
+    padding: 0rem;
+}
+.validadeCVV {
+    display: flex;
+}
+#vci {
+    width: 32%;
+    flex-direction: column;
+    margin-right: 0.1875rem;
+    height: 2.5rem;
+    padding: 8px;
+}
+#numeroCartao {
+    margin-bottom: 0.625rem;
+}
+#LabelCVV {
+    margin-left: 10.8125rem;
+}
+form {
+    padding-right: 4.5625rem;
+    padding-left: 5.500rem;
+}
+form input {
+    border: 0.125rem;
+    border-radius: 0.25rem;
+    background-color: #d9d9d9 !important;
+    padding: 0.75rem 1.25rem;
+}
+form select {
+    border: 0.125rem;
+    border-radius: 0.25rem;
+    background-color: #d9d9d9 !important;
+    padding: 0.75rem 1.25rem;
+}
+form input:invalid {
+    border: 0.1875rem solid red;
+}
+.validadeCartao {
+    margin-bottom: 0.625rem;
+}
+#siteReal {
+    margin-top: 1.25rem;
+    color: #afafaf;
+}
+#verificar {
+    margin-top: 1.25rem;
+    width: 100%;
+    background-color: #25133d;
+    color: #fff;
+}
+#verificar:hover {
+    background-color: #706b8b;  
+}
+.form-label {
+    margin-top: 0.625rem;
+}
+.creditCard img {
+    position: absolute;
+    height: 42.625rem;
+    margin-left: 7.5rem;
+    margin-top: 1.875rem;
+}
+footer {
+    background-color: #25133d;
+    color: #fff;
+}
+.modal-body img {
+    
+}

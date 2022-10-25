@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Verificador de Cartão Clonado</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="./Imagens/Credit Card (Icon).svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="creditCard">
+        <img
+        src="./Imagens/Credit Card - Front and Back (Icon).svg"
+        alt="Frente e costa de um cartão de crédito."
+      /></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4" id="aside"><p>Este site é apenas uma piada.</p></div>
+          <div class="col-8" id="dados">
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-8">
+                <div class="title">
+                  <h1>Veja se o seu cartão</h1>
+                  <h1 id="title2"><mark><em>vazou</em></mark> na internet</h1>
+                </div>
+                <form>
+                  <label for="nomeCartao" class="form-label"
+                    >Nome no Cartão</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nomeCartao"
+                    placeholder="ex. JOÃO DA SILVA"
+                  />
+                  <label for="numeroCartao" class="form-label"
+                    >Número no Cartão</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="numeroCartao"
+                    placeholder="0000 0000 0000 0000"
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                  />
+                  <label for="validadeCartao" class="form-label"
+                    >Data de Expiração</label
+                  >
+                  <label for="CVV" class="form-label" id="LabelCVV">CVV</label>
+                  <div class="validadeCVV">
+                    <br />
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label="MM"
+                      class="validadeCartao"
+                      id="vci"
+                    >
+                      <option selected>MM</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="1">4</option>
+                      <option value="2">5</option>
+                      <option value="3">6</option>
+                      <option value="1">7</option>
+                      <option value="2">8</option>
+                      <option value="3">9</option>
+                      <option value="1">10</option>
+                      <option value="2">11</option>
+                      <option value="3">12</option>
+                    </select>
+                    <select
+                      class="form-select form-select-sm"
+                      aria-label="AAAA"
+                      class="validadeCartao"
+                      id="vci"
+                    >
+                      <option selected>AAAA</option>
+                      <option value="1">2022</option>
+                      <option value="2">2023</option>
+                      <option value="3">2024</option>
+                      <option value="1">2025</option>
+                      <option value="2">2026</option>
+                      <option value="3">2027</option>
+                      <option value="2">2028</option>
+                      <option value="3">2029</option>
+                    </select>
+                    <input
+                      type="text"
+                      class="validadeCartao"
+                      placeholder="123"
+                      id="vci"
+                      onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                    />
+                  </div>
+                  <label for="senhaCartao" class="form-label"
+                    >Senha do Cartão</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="senhaCartao"
+                    placeholder="****"
+                  />
+                  <button type="button" class="btn" id="verificar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Verificar
+                  </button>
+                </form>
+                <p class="text-center" id="siteReal">*Esse site é real</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="">
+              <img src="./Imagens/trollface.svg" class="img-fluid" alt="Troll Face">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fala sério!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
