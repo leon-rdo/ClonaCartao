@@ -95,6 +95,19 @@ footer {
     background-color: #25133d;
     color: #fff;
 }
-.modal-body img {
-    
+@media(min-width: 1343px) {
+    .Restrict img{
+        display: none;
+    }
 }
+@media(max-width: 1343px) {
+    .Restrict img{
+        width: max-content;
+        height: auto;
+        position: absolute;
+    }
+    .creditCard img {
+        display: none;
+    }
+}
+
