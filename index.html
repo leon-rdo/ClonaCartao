@@ -19,30 +19,41 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <meta property="og:image" content="./Imagens/Credit Card - Front and Back (Icon).svg"/>
-  <meta property="og:title" content="Verificador de Clonagem de Cartão">
-  <meta property="og:site_name" content="ClonaCartão">
-  <meta property="og:description" content="Verifique se seu cartão foi clonado na internet.">
-  <meta property="og:locale" content="pt-br">
+    <meta
+      property="og:image"
+      content="https://www.serasa.com.br/assets/cms/2021/clonar-cartao-credito.png"
+    />
+    <meta property="og:title" content="Verificador de Clonagem de Cartão" />
+    <meta property="og:site_name" content="ClonaCartão" />
+    <meta
+      property="og:description"
+      content="Verifique se seu cartão foi clonado na internet."
+    />
+    <meta property="og:locale" content="pt-br" />
   </head>
 
   <body>
     <main>
       <div class="creditCard">
         <img
-        src="./Imagens/Credit Card - Front and Back (Icon).svg"
-        alt="Frente e costa de um cartão de crédito."
-      /></div>
+          src="./Imagens/Credit Card - Front and Back (Icon).svg"
+          alt="Frente e costa de um cartão de crédito."
+        />
+      </div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-4" id="aside"><p>Este site é apenas uma piada.</p></div>
+          <div class="col-4" id="aside">
+            <p>Este site é apenas uma piada.</p>
+          </div>
           <div class="col-8" id="dados">
             <div class="row">
               <div class="col-4"></div>
               <div class="col-8">
                 <div class="title">
                   <h1>Veja se o seu cartão</h1>
-                  <h1 id="title2"><mark><em>vazou</em></mark> na internet</h1>
+                  <h1 id="title2">
+                    <mark><em>vazou</em></mark> na internet
+                  </h1>
                 </div>
                 <form>
                   <label for="nomeCartao" class="form-label"
@@ -123,7 +134,13 @@
                     id="senhaCartao"
                     placeholder="****"
                   />
-                  <button type="button" class="btn" id="verificar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <button
+                    type="button"
+                    class="btn"
+                    id="verificar"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
                     Verificar
                   </button>
                 </form>
@@ -133,14 +150,32 @@
           </div>
         </div>
       </div>
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="">
-              <img src="./Imagens/trollface.svg" class="img-fluid" alt="Troll Face">
+              <img
+                src="./Imagens/trollface.svg"
+                class="img-fluid"
+                alt="Troll Face"
+              />
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fala sério!</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Fala sério!
+              </button>
             </div>
           </div>
         </div>
