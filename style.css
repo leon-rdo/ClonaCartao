@@ -20,6 +20,10 @@ body {
     font-family: "tt-travels-medium", "Arial", sans-serif;
     padding-right: 6rem;
 }
+.title {
+    display: flex;
+    width: max-content;
+}
 h1 {
     font-size: 3.4375rem;
 }
@@ -30,6 +34,32 @@ h1 {
 mark {
     background-color: #aeb5bf;
     padding: 0rem;
+}
+@keyframes animation {
+    
+}
+.creditIcon {
+    transform: rotateY(180deg);
+}
+#creditIcon {
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    transition: all .7s;
+}
+.face {
+    width: 100px;
+    height: auto;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+#front{
+    transform: rotateY(180deg); 
+}
+#back {
+    backface-visibility: hidden;
 }
 .validadeCVV {
     display: flex;
