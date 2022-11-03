@@ -35,9 +35,7 @@ mark {
     background-color: #aeb5bf;
     padding: 0rem;
 }
-@keyframes animation {
-    
-}
+
 .creditIcon {
     transform: rotateY(180deg);
 }
@@ -50,10 +48,7 @@ mark {
 .face {
     width: 100px;
     height: auto;
-    display: flex;
     position: absolute;
-    justify-content: center;
-    align-items: center;
 }
 #front{
     transform: rotateY(180deg); 
