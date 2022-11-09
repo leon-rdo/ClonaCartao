@@ -1,5 +1,7 @@
+
 body {
     height: 100vh;
+    width: 100%;
 }
 #aside {
     background-color: #25133d;
@@ -112,27 +114,61 @@ form input:invalid {
 }
 .creditCard img {
     position: absolute;
-    height: 42.625rem;
+    max-height: 42.625rem;
     margin-left: 7.5rem;
     margin-top: 1.875rem;
-}
+    }
 footer {
     background-color: #25133d;
     color: #fff;
 }
-@media(min-width: 1343px) {
-    .Restrict img{
-        display: none;
-    }
-}
-@media(max-width: 1343px) {
-    .Restrict img{
-        width: max-content;
-        height: auto;
-        position: absolute;
-    }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
     .creditCard img {
-        display: none;
-    }
+        position: absolute;
+        height: 42.625rem;
+        margin-left: 7.5rem;
+        margin-top: 1.875rem;
+        }
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .creditCard img {
+        position: absolute;
+        height: 42.625rem;
+        margin-left: 7.5rem;
+        margin-top: 1.875rem;
+        }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .creditCard img {
+        position: absolute;
+        height: 42.625rem;
+        margin-left: 7.5rem;
+        margin-top: 1.875rem;
+        }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .creditCard img {
+        position: absolute;
+        height: 35.1rem;
+        margin-left: 3.5rem;
+        margin-top: 1.875rem;
+        }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .creditCard img {
+    position: absolute;
+    height: 42.625rem;
+    margin-left: 7.5rem;
+    margin-top: 1.875rem;
+    }
+}
